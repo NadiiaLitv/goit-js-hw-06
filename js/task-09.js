@@ -4,7 +4,7 @@ const colorSpan = document.querySelector(".color");
 
 changeColorBtn.addEventListener("click", onClick);
 
-function onClick(evt) {
+function onClick() {
   let randomColor = getRandomHexColor();
   body.style.backgroundColor = randomColor;
   colorSpan.textContent = randomColor;

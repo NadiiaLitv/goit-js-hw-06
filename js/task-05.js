@@ -3,7 +3,7 @@ const nameOutput = document.querySelector("#name-output");
 
 nameInput.addEventListener("input", enterName);
 
-function enterName(evt) {
+function enterName() {
   if (nameInput.value.trim() === "") {
     nameOutput.textContent = "Anonymous";
   } else {

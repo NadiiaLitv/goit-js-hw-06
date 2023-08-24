@@ -2,7 +2,7 @@ const loginForm = document.querySelector(".login-form");
 
 loginForm.addEventListener("submit", handlerSubmit);
 
-  function handlerSubmit(evt) {
+function handlerSubmit(evt) {
   evt.preventDefault();
   const emailInput = loginForm.elements.email;
   const passwordInput = loginForm.elements.password;
@@ -12,4 +12,4 @@ loginForm.addEventListener("submit", handlerSubmit);
     console.log({ Email: emailInput.value, Password: passwordInput.value });
     loginForm.reset();
   }
-});
+}
